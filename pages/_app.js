@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '@/styles/globals.css'
 import '@/styles/bootstrap.min.css'
 import { SSRProvider } from 'react-bootstrap';
 import Layout from '@/components/Layout';
