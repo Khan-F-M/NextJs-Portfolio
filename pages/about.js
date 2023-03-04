@@ -8,28 +8,25 @@ import Image from 'next/image';
 
 export default function about() {
   return (
-    <Container>
+    <Container md={6} lg={6}>
       <Row>
         <Col>
           <LittleAboutMe />
         </Col>
-        {/* ADDING A SECOND COLUMN */}
-        <Col>
-          <h1>I'll add an Image Here</h1>
+        <Col md={6} lg={6} className="d-flex justify-content-center">
+          <Image src='/about/4002785.jpg' alt='' width={500} height={250}/>
         </Col>
       </Row>
       <Row>
-        <Col>
-          <h1>I'll add an Image Here</h1>
+        <Col md={6} lg={6} className="d-flex justify-content-center">
+        <Image src='/about/Vectors.jpg' alt='' width={500} height={250}/>
         </Col>
-        {/* ADDING A SECOND COLUMN */}
-
         <Col>
           <h1>Technologies Faisal
             <span class="inline-flex items-baseline">
               <img src="/Myself.JPG" alt="" class="self-center w-7 h-7 rounded-full mx-1" />
             </span>
-            Works With</h1>
+            Uses</h1>
           <Frameworks />
         </Col>
       </Row>

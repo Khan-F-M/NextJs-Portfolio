@@ -1,43 +1,48 @@
 import React from 'react'
-import Image from 'next/image'
 import Table from 'react-bootstrap/Table';
+import Image from 'react-bootstrap/Image'
+import { Col, Row, Container } from 'react-bootstrap';
 
 export default function Frameworks() {
     return (
-        <Table hover className="border-0">
-            <tbody>
-                <tr>
-                    <td>
-                        <Image src="/frameworks/logo-nodejs.png" alt="" width={100} height={50} />
-                    </td>
-                    <td>
-                        <Image src="/frameworks/FramerMotion.png" alt="" width={100} height={50} />
-                    </td>
-                    <td>
-                        <Image src="/frameworks/logo-postgres.png" alt="" width={100} height={50} />
-                    </td>
-                    <td>
-                        <Image src="/frameworks/bootstrap.png" alt="" width={100} height={50} />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <Image src="/frameworks/logo-postgres.png" alt="" width={100} height={50} />
-                    </td> <td>
-                        <Image src="/frameworks/logo-postgres.png" alt="" width={50} height={50} />
-                    </td> <td>
-                        <Image src="/frameworks/logo-postgres.png" alt="" width={50} height={50} />
-                    </td> <td>
-                        <Image src="/frameworks/logo-postgres.png" alt="" width={50} height={50} />
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td colSpan={2}>Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </Table>
+        <Container>
+            <Row className='justify-content-center'>
+                <Col lg={3} md={4} xs={4}>
+                    <Image fluid src='/frameworks/logo-nodejs.png' alt='NodeJs' width={65} height={65}/>
+                </Col>
+                <Col lg={3} md={4} xs={4}>
+                    <Image fluid src='/frameworks/logo-nextjs.png' alt='NextJs' width={65} height={65}/>
+                </Col>
+                <Col lg={3} md={4} xs={4}>
+                    <p className='fs-3'>EpxressJs</p>
+                </Col>
+            </Row>
+            <br />
+            <Row className='justify-content-center'>
+                <Col lg={3} md={4} xs={4} className='p-3'>
+                    <Image fluid src='/frameworks/logo-postgres.png' alt='PostGre' width={65} height={65}/>
+                </Col>
+                <Col lg={3} md={4} xs={4} className='p-3'>
+                    <Image fluid src='/frameworks/bootstrap.png' alt='Bootstrap' width={65} height={65} />
+                </Col>
+                <Col lg={3} md={4} xs={4} className='p-3'>
+                    <Image fluid src='/frameworks/VSTUDIO.png' alt='Visual studio' width={65} height={65} />
+                </Col>
+            </Row>
+            <br />
+            <Row className='justify-content-center'>
+                <Col lg={3} md={4} xs={4} className='p-3'>
+                    <Image fluid src='/frameworks/HTML5.png' alt='HTML 5' width={65} height={65}/>
+                </Col>
+                <Col lg={3} md={4} xs={4} className='p-3'>
+                    <Image fluid src='/frameworks/CSS.png' alt='CSS' width={47} height={47}/>
+                </Col>
+                <Col lg={3} md={4} xs={4} className='p-3'>
+                    <Image fluid src='/frameworks/javascript.png' alt='Javascript' width={60} height={60} />
+                </Col>
+            </Row>
+        </Container>
+
 
     )
 }

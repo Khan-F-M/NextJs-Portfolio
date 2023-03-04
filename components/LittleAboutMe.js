@@ -1,22 +1,25 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import Card from 'react-bootstrap/Card';
-import tailwindConfig from '@/tailwind.config';
 
 export default function LittleAboutMe() {
     return (
         <>
             <h1>A little Bit About Me</h1>
-            <p className="text-l text-red-900 text-justify font-bold">
-                I'm a student at Seneca College, and study
-                Computer Programming. I was originally studying
-                Computer Engineering Technology, however, I
-                had a greater passion for programming. For that reason,
-                I decided that focusing my time soley on programming
-                would be better than working on hardware and software aspects.
-                With that said, I still have a passion for the hardware part, but
-                I like to build projects in my own personal time, rather than being
-                limited to a deadline. This allows me to learn more and become better.
+            <p className='text-base md:text-base lg:text-xl'>
+                {/* Used tailwind for the responsive text size */}
+                I'm a Seneca College student. I am currently studying in
+                the Computer Programming(CPP) program as Seneca. My passion
+                is coding, specifically Web Development. Although I have more
+                experience and projects working with C++, I've always been
+                wanting to switch towards the Web side of programming.
+            </p>
+            <h3>Experience</h3>
+            <p className='text-base md:text-base lg:text-xl'>Unfortunetly, as of right now, I don't have any intership
+                or job experience with Web Development. However, I have
+                been studying this pathway for over a year now, and feel
+                confident that I would be a great addition to any team requiring
+                a web developer.
             </p>
         </>
     )
