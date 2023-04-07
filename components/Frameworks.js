@@ -23,22 +23,22 @@ export default function Frameworks() {
                     <Image fluid src='/frameworks/logo-postgres.png' alt='PostGre' width={65} height={65}/>
                 </Col>
                 <Col lg={3} md={4} xs={4} className='p-3'>
-                    <Image fluid src='/frameworks/bootstrap.png' alt='Bootstrap' width={65} height={65} />
+                    <Image fluid src='/frameworks/logo-bootstrap.png' alt='Bootstrap' width={65} height={65} />
                 </Col>
                 <Col lg={3} md={4} xs={4} className='p-3'>
-                    <Image fluid src='/frameworks/VSTUDIO.png' alt='Visual studio' width={65} height={65} />
+                    <Image fluid src='/frameworks/logo-vstudio.png' alt='Visual studio' width={65} height={65} />
                 </Col>
             </Row>
             <br />
             <Row className='justify-content-center'>
                 <Col lg={3} md={4} xs={4} className='p-3'>
-                    <Image fluid src='/frameworks/HTML5.png' alt='HTML 5' width={65} height={65}/>
+                    <Image fluid src='/frameworks/logo-html5.png' alt='HTML 5' width={65} height={65}/>
                 </Col>
                 <Col lg={3} md={4} xs={4} className='p-3'>
-                    <Image fluid src='/frameworks/CSS.png' alt='CSS' width={47} height={47}/>
+                    <Image fluid src='/frameworks/logo-css.png' alt='CSS' width={47} height={47}/>
                 </Col>
                 <Col lg={3} md={4} xs={4} className='p-3'>
-                    <Image fluid src='/frameworks/javascript.png' alt='Javascript' width={60} height={60} />
+                    <Image fluid src='/frameworks/logo-javascript.png' alt='Javascript' width={60} height={60} />
                 </Col>
             </Row>
         </Container>

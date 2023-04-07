@@ -1,7 +1,10 @@
 import React from 'react'
+// import ProjectsDisplay from '@/components/ProjectsDisplay'
+import Project from '@/components/Project'
 
 export default function projects() {
   return (
-    <h2>this will display my projects</h2>
+    // <ProjectsDisplay />
+    <Project />
   )
 }
