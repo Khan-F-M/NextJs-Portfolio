@@ -14,12 +14,12 @@ export default function about() {
           <LittleAboutMe />
         </Col>
         <Col md={6} lg={6} className="d-flex justify-content-center">
-          <Image src='/about/4002785.jpg' alt='' width={500} height={250}/>
+          <Image src='/about/Vectors 1.jpg' alt='' width={500} height={250}/>
         </Col>
       </Row>
       <Row>
         <Col md={6} lg={6} className="d-flex justify-content-center">
-        <Image src='/about/Vectors.jpg' alt='' width={500} height={250}/>
+        <Image src='/about/Vectors 2.jpg' alt='' width={500} height={250}/>
         </Col>
         <Col>
           <h1>Technologies Faisal
