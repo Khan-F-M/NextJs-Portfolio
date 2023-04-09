@@ -1,16 +1,16 @@
 import '@/styles/globals.css'
-import '@/styles/bootstrap.min.css'
-import { SSRProvider } from 'react-bootstrap';
-import Layout from '@/components/Layout';
-
+import MainNav from '@/components/MainNav';
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <SSRProvider>
-        <Component {...pageProps} />
-      </SSRProvider>
-    </Layout>
+    <>
+      <MainNav />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Component {...pageProps} />
+    </>
   );
 }
 
