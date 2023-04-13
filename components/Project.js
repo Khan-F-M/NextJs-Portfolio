@@ -15,11 +15,9 @@ export default function Project() {
                     What I've Built</h3>
 
                 <div className='grid md:grid-cols-1 lg:grid-cols-2 gap-8'>
-               
-                    <ProjectItem titel='NextJs Project' backgroundImage={SamplePic} projectURl='/'/>
-                    <ProjectItem titel='NextJs Project' backgroundImage={SamplePic} projectURl='/'/>
-                    <ProjectItem titel='NextJs Project' backgroundImage={SamplePic} projectURl='/'/>
-                    <ProjectItem titel='NextJs Project' backgroundImage={SamplePic} projectURl='/'/>
+
+                    <ProjectItem backgroundImage={BlogPost} lanUsed='Javascript + PostgreSQL' projectURl='/' title='BlogPost'/>
+                    <ProjectItem backgroundImage={SamplePic} lanUsed='NextJs + TailwindCSS' projectURl='/' title='Portfolio'/>
 
                 </div>
             </div>
