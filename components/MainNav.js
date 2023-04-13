@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedin, FaGithub, } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
+import { RiMenu3Fill } from 'react-icons/ri'
 
 export default function MainNav() {
     const [nav, setNavbar] = useState(false)
@@ -17,7 +18,7 @@ export default function MainNav() {
 
     useEffect(() => {
         function handleShadow() {
-            if(window.scrollY >= 90) (
+            if (window.scrollY >= 90) (
                 setShadow(true)
             )
             else {
@@ -25,7 +26,7 @@ export default function MainNav() {
             }
         }
         window.addEventListener('scroll', handleShadow)
-      }, []);
+    }, []);
     // We use this function to handle the opening and closing of the sidebar.
     /* 
     The way we do this is by using the useState component of react to create a nav
@@ -37,23 +38,45 @@ export default function MainNav() {
         // Fixed means it'll be fixed to the top
         // Z-[100] means we want it to always be on top
         <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-black" : "fixed w-full h-20 z-[100] bg-black"}>
-            <div className="flex justify-center items-center w-full h-full px-2 2xl:px-16">
+            <div className="flex justify-end lg:justify-center md:justify-center items-center w-full h-full px-2 2xl:px-16">
                 <div>
                     <ul className="hidden md:flex">
                         <Link href="/">
-                            <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+                            <li className="ml-10 text-sm uppercase hover:border-b ">Home</li>
+                            {/* <button className="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                Home
+                            </button> */}
                         </Link>
                         <Link href="/about">
-                            <li className="ml-10 text-sm  uppercase hover:border-b">About</li>
+                            <li className="ml-10 text-sm  uppercase hover:border-b ">About</li>
+
+                            {/* <button className="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                About
+                            </button> */}
                         </Link>
                         <Link href="/skills">
-                            <li className="ml-10 text-sm  uppercase hover:border-b">Skills</li>
+                            <li className="ml-10 text-sm  uppercase hover:border-b ">Skills</li>
+                            {/* <button className="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                Skills
+                            </button> */}
                         </Link>
                         <Link href='/projects'>
-                            <li className="ml-10 text-sm  uppercase hover:border-b">Projects</li>
+                            <li className="ml-10 text-sm  uppercase hover:border-b ">Projects</li>
+                            {/* <button class="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                Projects
+                            </button> */}
                         </Link>
                         <Link href="/contact">
-                            <li className="ml-10 text-sm  uppercase hover:border-b">Contact</li>
+                            <li className="ml-10 text-sm  uppercase hover:border-b ">Contact</li>
+                            {/* <button class="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                Contact
+                            </button> */}
+                        </Link>
+                        <Link href="/todo">
+                            <li className="ml-10 text-sm  uppercase hover:border-b ">TO DO</li>
+                            {/* <button class="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                Contact
+                            </button> */}
                         </Link>
                     </ul>
                 </div>
@@ -61,7 +84,7 @@ export default function MainNav() {
                 {/* For Icons we'll be using react-icons.*/}
 
                 <div className="md:hidden" onClick={handleNav}>
-                    <AiOutlineMenu size={25} color='white' />
+                    <RiMenu3Fill size={25} color='white' />
                 </div>
             </div>
 
@@ -80,7 +103,7 @@ export default function MainNav() {
                             </div>
                         </div>
                         <div className='border-b border-gray-300 my-4'>
-                            <p className='w-[85%] md:w-[90%] py-4 text-black'>Hello,</p>
+                            {/* <p className='w-[85%] md:w-[90%] py-4 text-black'>Hello,</p> */}
                         </div>
                     </div>
                     <div>
