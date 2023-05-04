@@ -9,19 +9,19 @@ export default function Contact() {
         <div className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full text-center 
             mt-8 justify-evenly'>
-                
+
                 <h3 className='top-24 uppercase tracking-[20px]
             text-gray-300 text-2xl'>Contact</h3>
 
                 <h3 className='top-36 uppercase tracking-[3px] text-gray-500 text-sm mb-10 mt-3'>
                     Lets work together</h3>
 
-                <div className='grid lg:grid-cols-5 gap-8'>
+                <div className='items-center justify-center'>
                     {/* LEFT  */}
-                    <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
+                    {/* <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
                         <div className='lg:p-4 h-full'>
                             <div>
-                                <Image className='rounded-xl ease-in duration-300' src={TestImage} alt="/" />
+                                <Image className='rounded-xl ease-in duration-300' src={TestImage} alt="/"/>
                             </div>
                             <div>
                                 <h2 className='py-2 text-3xl'>Faisal Khan</h2>
@@ -45,7 +45,7 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
                     {/* RIGHT */}

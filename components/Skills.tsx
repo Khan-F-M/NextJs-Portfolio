@@ -1,19 +1,25 @@
 import React from 'react'
 import Image from 'next/image'
 import SimpleSkill from './SimpleSkill'
-import JSLogo from '@/public/frameworks/logo-javascript.png'
-import HTMLLogo from '@/public/frameworks/logo-html5.png'
-import CSSLogo from '@/public/frameworks/logo-css.png'
-import NEXTJSLogo from '@/public/frameworks/logo-nextjs.png'
-import TAILLogo from '@/public/frameworks/logo-tailwind.png'
-import POSTGRESLogo from '@/public/frameworks/logo-postgres.png'
-import BOOTSTRAPLogo from '@/public/frameworks/logo-bootstrap.png'
-import PYTHONLogo from '@/public/frameworks/logo-python.png'
-import NODEJSLogo from '@/public/frameworks/logo-nodejs.png'
-import CPPLogo from '@/public/frameworks/logo-cpp.png'
-import RASPLogo from '@/public/frameworks/logo-raspberrypi.png'
+import JSLogo from '../public/frameworks/logo-javascript.png'
+import HTMLLogo from '../public/frameworks/logo-html5.png'
+import CSSLogo from '../public/frameworks/logo-css.png'
+import NEXTJSLogo from '../public/frameworks/logo-nextjs.png'
+import TAILLogo from '../public/frameworks/logo-tailwind.png'
+import POSTGRESLogo from '../public/frameworks/logo-postgres.png'
+import BOOTSTRAPLogo from '../public/frameworks/logo-bootstrap.png'
+import PYTHONLogo from '../public/frameworks/logo-python.png'
+import NODEJSLogo from '../public/frameworks/logo-nodejs.png'
+import CPPLogo from '../public/frameworks/logo-cpp.png'
+import RASPLogo from '../public/frameworks/logo-raspberrypi.png'
+import { urlFor } from '@/sanity'
+import { Skill } from '@/typings'
 
-export default function Skills() {
+type Props = {
+    skills: Skill[];
+}
+
+export default function Skills({ skills }: Props) {
     return (
         // USE ARRAY.MAP FOR THIS. IT IS MORE THE REACT WAY. LOOP THROUGH EACH IMAGE.
         <>
@@ -29,7 +35,7 @@ export default function Skills() {
                 <div className='absolute top-60'> {/*THE TOP WAS THE REASON. THIS PROP SEPERATES THE ELEMENTS UNUSUALLY*/}
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 
-                        <SimpleSkill ImageURL={JSLogo} Lang="Javascript" />
+                        {/* <SimpleSkill ImageURL={JSLogo} Lang="Javascript" />
                         <SimpleSkill ImageURL={HTMLLogo} Lang="HTML" />
                         <SimpleSkill ImageURL={CSSLogo} Lang="CSS" />
                         <SimpleSkill ImageURL={NEXTJSLogo} Lang="NEXTJS" />
@@ -37,7 +43,11 @@ export default function Skills() {
                         <SimpleSkill ImageURL={POSTGRESLogo} Lang="Postgres" />
                         <SimpleSkill ImageURL={BOOTSTRAPLogo} Lang="Bootstrap" />
                         <SimpleSkill ImageURL={CPPLogo} Lang="C++" />
-                        <SimpleSkill ImageURL={PYTHONLogo} Lang="python" />
+                        <SimpleSkill ImageURL={PYTHONLogo} Lang="python" /> */}
+
+                        {skills.map((skl) => (
+                            <SimpleSkill key={skl._id} ImageURL={urlFor(skl.skillImage).url()} Lang={skl.name} />
+                        ))}
                     </div>
 
                 </div>

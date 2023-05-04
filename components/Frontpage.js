@@ -2,7 +2,6 @@ import React from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedin, FaGithub, } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import BackgroundCrcle from './BackgroundCrcle';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 export default function frontpage() {

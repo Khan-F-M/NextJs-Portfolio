@@ -18,7 +18,8 @@ export default function todo() {
                 <li>Add more skills</li>
                 <li>Optimize performance using techniques from WEB422</li>
                 <li>Deploy project.</li>
-
+                <li>Add Contact Page and give it a backup</li>
+                <li>Implement a CMS (Content Management System) to make your life easier</li>
             </ol>
 
         </div>

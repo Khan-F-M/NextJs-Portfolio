@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Myself from '@/public/Myself.JPG'
+import Myself from '../public/Myself.JPG'
+import Sunset from '../public/Sunset.JPG'
 import Skills from './Skills'
 import FavQuotes from './FavQoutes'
 

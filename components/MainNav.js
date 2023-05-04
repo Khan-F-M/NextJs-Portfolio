@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import SamplePic from '@/public/Myself.JPG';
+import SamplePic from '../public/Myself.JPG';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedin, FaGithub, } from 'react-icons/fa'
@@ -66,18 +66,18 @@ export default function MainNav() {
                                 Projects
                             </button> */}
                         </Link>
-                        <Link href="/contact">
+                        {/* <Link href="/contact">
                             <li className="ml-10 text-sm  uppercase hover:border-b ">Contact</li>
-                            {/* <button class="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            <button class="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                                 Contact
-                            </button> */}
-                        </Link>
-                        <Link href="/todo">
+                            </button>
+                        </Link> */}
+                        {/* <Link href="/todo">
                             <li className="ml-10 text-sm  uppercase hover:border-b ">TO DO</li>
-                            {/* <button class="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            <button class="ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                                 Contact
-                            </button> */}
-                        </Link>
+                            </button>
+                        </Link> */}
                     </ul>
                 </div>
 
