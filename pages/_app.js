@@ -1,5 +1,5 @@
-import '@/styles/globals.css'
-import MainNav from '@/components/MainNav';
+import '../styles/globals.css'
+import MainNav from '../components/MainNav';
 
 export default function App({ Component, pageProps }) {
   return (
