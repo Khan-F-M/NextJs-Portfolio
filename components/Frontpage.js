@@ -4,15 +4,23 @@ import { FaLinkedin, FaGithub, } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
-export default function frontpage() {
 
-    const[text, count] = useTypewriter ({
-        words: ["A Full-Stack Web Developer"],
+function useTypewriterHook() {
+    const [text, count] = useTypewriter({
+        words: ['A Full-Stack Web Developer'],
         loop: true,
         delaySpeed: 2000,
     });
 
-    
+    return text;
+}
+
+
+export default function Frontpage() {
+
+    const text = useTypewriterHook();
+
+
     return (
         <>
             {/* <BackgroundCrcle /> */}
@@ -20,18 +28,18 @@ export default function frontpage() {
                 <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                     <div>
                         <p className='uppercase text-sm tracking-widest text-gray-400'>
-                        Welcome to my web page
-                            </p>
+                            Welcome to my web page
+                        </p>
                         <h1 className='py-4 text-purple-400'>
-                            Hi, I'm <span className='text-[#5651e5]'>Faisal</span>
+                            Hi, I&apos;m <span className='text-[#5651e5]'>Faisal</span>
                         </h1>
                         <h1 className='py-4 text-white-500'>
-                        {text}
-                            <Cursor cursorColor="#FF0500"/>
+                            {text}
+                            <Cursor cursorColor="#FF0500" />
                         </h1>
                         <p className='py-4 text-white-600 max-w-[70%] m-auto'>
-                            I'm a Computer Programming student at Seneca College in my final semester.
-                            I've worked with many langauges in my time at Seneca such as C, C++, JS,
+                            I&apos;m a Computer Programming student at Seneca College in my final semester.
+                            I&apos;ve worked with many langauges in my time at Seneca such as C, C++, JS,
                             Python, and Linux. Along the way, I learned that I had a passion for creating
                             and designing web sites. However, due to my time focusing on college i never
                             got the time for many side projects.

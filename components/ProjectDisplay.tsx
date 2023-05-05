@@ -16,7 +16,7 @@ export default function ProjectDisplay({ projects }: Props) {
             text-gray-300 text-2xl'>Projects</h3>
 
                 <h3 className='uppercase tracking-[3px] text-gray-500 text-sm mb-10 mt-3'>
-                    What I've Built</h3>
+                    What I&lsquo;ve Built</h3>
 
                 <div className='grid md:grid-cols-1 lg:grid-cols-2 gap-8'>
 
