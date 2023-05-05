@@ -23,6 +23,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     props: {
       skills
     },
-    revalidate: 1,
+    revalidate: 10,
   }
 }

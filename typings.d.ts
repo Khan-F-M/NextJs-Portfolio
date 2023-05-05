@@ -34,3 +34,15 @@ export interface Skill extends SanityBody {
     name: string;
     skillImage: Image;
 }
+
+export interface About extends SanityBody {
+    _type: "aboutsInfo"
+    name: string;
+    description: string,
+    profilePic: Image;
+}
+
+export interface Social extends SanityBody {
+    _type: "socialsInfo"
+    socialPic: Image;
+}

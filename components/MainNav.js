@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import SamplePic from '../public/Myself.JPG';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedin, FaGithub, } from 'react-icons/fa'

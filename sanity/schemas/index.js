@@ -1,7 +1,8 @@
 import projectsInfo from './projectsInfo'
 import skillsInfo from './skillsInfo'
+import aboutsInfo from './aboutsInfo'
 
-export const schemaTypes = [projectsInfo, skillsInfo]
+export const schemaTypes = [projectsInfo, skillsInfo, aboutsInfo]
 
 
 
