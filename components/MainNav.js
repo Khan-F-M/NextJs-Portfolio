@@ -126,7 +126,11 @@ export default function MainNav() {
                         </ul>
 
                         <div className='pt-4'>
+<<<<<<< HEAD
                             <p className='uppercase tracking-widest text-black'>Let&apos;s connect!</p>
+=======
+                            <p className='uppercase tracking-widest text-black'>Let's connect!</p>
+>>>>>>> 1fc579dbeabce3397ed1d5f4ee554379976eea80
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full text-black shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaLinkedin size={35} />
