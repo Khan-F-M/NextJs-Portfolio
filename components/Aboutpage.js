@@ -21,19 +21,11 @@ export default function Aboutpage() {
             md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'/>
 
                 <div className='space-y-10 px-0 md:px-10'>
-<<<<<<< HEAD
                     <h4 className='text-4xl font-semibold'> Here&lsquo;s a <span className='underline decoration-[#FFF157]/50'>little</span> background</h4>
                     <p className='text-base'>My full name is The Guy Faisal Khan. I currently study at Seneca Colleg. I was born in Zibawawe. My favourite food
                         is biryani. I have very few people I would consider friends. This paragraph is soley for the purpose of filling in the blanks.
                         In all brutal honesty my life is not the most interesting one. I&lsquo;m supose to add some animation to
                         this component but that would require framer motion and I&lsquo;ve already uninstalled it. The page isn&lsquo;t looking so good
-=======
-                    <h4 className='text-4xl font-semibold'> Here's a <span className='underline decoration-[#FFF157]/50'>little</span> background</h4>
-                    <p className='text-base'>My full name is The Guy Faisal Khan. I currently study at Seneca Colleg. I was born in Zibawawe. My favourite food
-                        is biryani. I have very few people I would consider friends. This paragraph is soley for the purpose of filling in the blanks.
-                        In all brutal honesty my life is not the most interesting one. I'm supose to add some animation to
-                        this component but that would require framer motion and I've already uninstalled it. The page isn't looking so good
->>>>>>> 1fc579dbeabce3397ed1d5f4ee554379976eea80
                         no cap. Looks kinda ugly lowkey. Might have to switch back to the original tutorial because that dudes website
                         looked way cleaner. His is carried by animation. I also have some quotes that I like.
                     </p>
