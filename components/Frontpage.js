@@ -9,7 +9,7 @@ export default function frontpage() {
     const[text, count] = useTypewriter ({
         words: ["A Full-Stack Web Developer"],
         loop: true,
-        delaySpeed: 200,
+        delaySpeed: 2000,
     });
 
     return (
