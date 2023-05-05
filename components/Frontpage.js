@@ -12,6 +12,7 @@ export default function frontpage() {
         delaySpeed: 2000,
     });
 
+    
     return (
         <>
             {/* <BackgroundCrcle /> */}
