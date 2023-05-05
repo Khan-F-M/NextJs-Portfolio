@@ -1,7 +1,7 @@
 import { Project } from "@/typings";
 
 export async function fetchProjects() {
-    const res = await fetch(`${process.env.NEXT_BASE_URL}/api/getProjInfo`)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getProjInfo`)
     // THIS LINK IS FOR THE NEXTJS APPLICATION NOT SANITY
     
     const data = await res.json();
