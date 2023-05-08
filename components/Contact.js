@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedin, FaGithub, } from 'react-icons/fa'
-import TestImage from '@/public/about/Vectors 1.jpg'
 
 export default function Contact() {
     return (
