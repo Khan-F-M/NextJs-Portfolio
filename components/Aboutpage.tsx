@@ -10,7 +10,7 @@ type Props = {
     abouts: About;
 }
 
-
+// Why hasn't nextjs deployed this automatically
 export default function Aboutpage({ abouts }: Props) {
 
     return (
