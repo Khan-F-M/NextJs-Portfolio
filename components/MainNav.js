@@ -119,9 +119,9 @@ export default function MainNav() {
                             <Link href='/projects'>
                                 <li onClick={() => setNavbar(false)} className='py-4 text-lg text-black'>Projects</li>
                             </Link>
-                            <Link href='/contact'>
+                            {/* <Link href='/contact'>
                                 <li onClick={() => setNavbar(false)} className='py-4 text-lg text-black'>Contact</li>
-                            </Link>
+                            </Link> */}
                         </ul>
 
                         <div className='pt-4'>
