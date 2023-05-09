@@ -22,7 +22,7 @@ export default function Aboutpage({ abouts }: Props) {
             text-gray-300 text-2xl'>About</h3>
 
                     <h3 className='sm:absolute md:absolute lg:absolute xl:absolute top-36 uppercase tracking-[3px] 
-                text-gray-500 text-sm mb-7'>a bit about myself</h3>
+                text-gray-500 text-sm mb-10'>a bit about myself</h3>
 
                 <img src={urlFor(abouts.profilePic).url()} alt="/" className='mb-9 mt-7 md:mb-0 lg:mt-10 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]' />
 
