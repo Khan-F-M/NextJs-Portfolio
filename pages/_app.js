@@ -1,16 +1,14 @@
 import '../styles/globals.css'
 import MainNav from '../components/MainNav';
 import Footer from '../components/Footer';
+import MainLayout from '../components/MainLayout';
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <MainNav />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Component {...pageProps} />
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
     </>
   );
 }
