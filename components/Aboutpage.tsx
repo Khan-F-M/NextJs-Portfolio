@@ -29,7 +29,7 @@ export default function Aboutpage({ abouts }: Props) {
                 <div className='space-y-10 px-0 md:px-10'>
                     {/* <h4 className='text-4xl font-semibold'> Here&lsquo;s a <span className='underline decoration-[#FFF157]/50'>little</span> background</h4> */}
                     <h4 className='text-4xl font-semibold'>{abouts.name}</h4>
-                    <p className='text-base text-justify'>{abouts.description}</p>
+                    <p className='text-base text-center'>{abouts.description}</p>
                 </div>
             </div>
 
