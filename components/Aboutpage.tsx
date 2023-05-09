@@ -26,10 +26,10 @@ export default function Aboutpage({ abouts }: Props) {
 
                 <img src={urlFor(abouts.profilePic).url()} alt="/" className='mb-9 mt-7 md:mb-0 lg:mt-10 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]' />
 
-                <div className='space-y-10 px-0 md:px-10 text-justify'>
+                <div className='space-y-10 px-0 md:px-10'>
                     {/* <h4 className='text-4xl font-semibold'> Here&lsquo;s a <span className='underline decoration-[#FFF157]/50'>little</span> background</h4> */}
                     <h4 className='text-4xl font-semibold'>{abouts.name}</h4>
-                    <p className='text-base'>{abouts.description}</p>
+                    <p className='text-base text-justify'>{abouts.description}</p>
                 </div>
             </div>
 
