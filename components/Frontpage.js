@@ -22,8 +22,9 @@ export default function Frontpage() {
     return (
         <>
             {/* <BackgroundCrcle /> */}
-            <div className='w-full h-screen text-center'>
-                <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+            <div className='w-full'>
+                <div className='min-w-screen min-h-screen mx-auto px-10 pt-[200px] text-center 
+                     justify-evenly'>
                     <div>
                         <p className='uppercase text-sm tracking-widest text-gray-400'>
                             Welcome to my web page
