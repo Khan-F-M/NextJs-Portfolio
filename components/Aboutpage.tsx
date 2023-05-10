@@ -15,9 +15,8 @@ export default function Aboutpage({ abouts }: Props) {
 
     return (
         <div className='max-w-[1240px] mx-auto px-2 py-16 text-center 
-        mt-8 mb-20 justify-evenly'>
-            <div className='max-w-[1240px] mx-auto px-2 py-16 items-center text-center mt-8 justify-evenly'>
-
+        mt-8 mb-40 justify-evenly'>
+            <div className='max-w-[1240px] mx-auto px-2 py-1 items-center text-center mt-8 justify-evenly'>
 
                 <div key={abouts._id} className='flex flex-col relative h-screen text-center md:text-center
         md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center mt-40 mb-60 md:mt-0 md:mb-0'>
