@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FavQuotes() {
     return (
-        <div className='relative max-h-screen text-center max-w-7xl px-10 pt-[100px] mx-auto items-center'>
+        <div className='relative text-center max-w-7xl px-10 pt-[100px] mx-auto items-center'>
 
             <h3 className='top-24 uppercase tracking-[20px]
             text-gray-300 text-2xl'>Quotes</h3>
