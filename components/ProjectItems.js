@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function ProjectItems({ title, backgroundImage, projectURl, lanUsed }) {
     return (
         <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl px-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#789dff]'>
-            <img className='rounded-xl group-hover:opacity-10' src={backgroundImage} alt='/' width={1000} height={1000} />
+            <img className='rounded-xl group-hover:opacity-10' src={backgroundImage} alt='/' width={700} height={700} />
             {/* as long as I use img instead of Image Component
             from Nextjs it will work perfectly */}
             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
