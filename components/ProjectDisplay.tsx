@@ -24,7 +24,7 @@ export default function ProjectDisplay({ projects }: Props) {
                     {projects.map((prj) => (
                         <ProjectItem
                             key={prj._id} // make sure to provide a unique key for each item in the list
-                            backgroundImage={urlFor(prj.projImage).url()}
+                            backgroundImage={prj.projImage ? urlFor(prj.projImage).url() : 'IMAGE NOT AVAILABLE'}
                             lanUsed={prj.languages}
                             projectURl={prj.moreInfo}
                             title={prj.name}
