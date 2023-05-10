@@ -16,7 +16,7 @@ export default function Aboutpage({ abouts }: Props) {
     return (
 
         <div className='w-full'>
-            <div className='max-w-[1240px] min-h-screen mx-auto px-10 pt-[200px] text-center 
+            <div className='min-w-screen min-h-screen mx-auto px-10 pt-[200px] text-center 
                      justify-evenly'>
 
                 <h3 className='top-24 uppercase tracking-[20px]
@@ -35,7 +35,12 @@ export default function Aboutpage({ abouts }: Props) {
                     <div className='space-y-10 px-0 pt-[50px] md:px-10 text-center'>
                         {/* <h4 className='text-4xl font-semibold'> Here&lsquo;s a <span className='underline decoration-[#FFF157]/50'>little</span> background</h4> */}
                         <h4 className='text-4xl font-semibold'>{abouts.name}</h4>
-                        <p className='text-base text-justify lg:text-center xl:text-center'>{abouts.description}</p>
+
+                        <div className='text-base text-center space-y-4 lg:text-center xl:text-center'>
+                            {abouts.description.split('  ').map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <FavQuotes />
