@@ -40,8 +40,7 @@ export default function Frontpage() {
                             I was a Computer Programming student at Seneca College.
                             I&apos;ve worked with many langauges in my time at Seneca such as C, C++, JS,
                             Python, and Linux. Along the way, I learned that I had a passion for creating
-                            and designing web sites. However, due to my time focusing on college i never
-                            got the time for many side projects.
+                            and designing web sites.
                         </p>
                         <div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
                             <div className='flex items-center justify-center my-4 w-full sm:w-[80%]'>
