@@ -7,7 +7,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function useTypewriterHook() {
     const [text, count] = useTypewriter({
-        words: ['Aspiring Web Dev'],
+        words: ['A Full-Stack Developer'],
         loop: true,
         delaySpeed: 2000,
     });
@@ -37,7 +37,7 @@ export default function Frontpage() {
                             <Cursor cursorColor="#FF0500" />
                         </h1>
                         <p className='py-4 text-white-600 max-w-[70%] m-auto'>
-                            I&apos;m a Computer Programming student at Seneca College in my final semester.
+                            I was a Computer Programming student at Seneca College in my final semester.
                             I&apos;ve worked with many langauges in my time at Seneca such as C, C++, JS,
                             Python, and Linux. Along the way, I learned that I had a passion for creating
                             and designing web sites. However, due to my time focusing on college i never
@@ -46,17 +46,27 @@ export default function Frontpage() {
                         <div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
                             <div className='flex items-center justify-center my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaLinkedin size={35} />
+                                    <a href="https://www.linkedin.com/in/mdfaisalkhn/" target="_blank" rel="noopener noreferrer">
+                                        <FaLinkedin size={35} />
+                                    </a>
                                 </div>
                                 <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaGithub size={35} />
+                                    <a href="https://github.com/Khan-F-M" target="_blank" rel="noopener noreferrer">
+                                        <FaGithub size={35} />
+                                    </a>
+                                </div>
+                                {/* <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <a href="https://www.linkedin.com/in/mdfaisalkhn/" target="_blank" rel="noopener noreferrer">
+
+                                        <AiFillInstagram size={35} />
+                                    </a>
                                 </div>
                                 <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiFillInstagram size={35} />
-                                </div>
-                                <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiOutlineTwitter size={35} />
-                                </div>
+                                    <a href="https://www.linkedin.com/in/mdfaisalkhn/" target="_blank" rel="noopener noreferrer">
+
+                                        <AiOutlineTwitter size={35} />
+                                    </a>
+                                </div> */}
                             </div>
                         </div>
                     </div>
