@@ -18,5 +18,11 @@ export default defineType({
                 hotspot: true,
             }
         },
+        {
+            name: "order",
+            title: "Display Order",
+            type: "number",
+            description: "Controls the order on the Skills page (1 = first)",
+        },
     ],
 })
