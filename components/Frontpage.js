@@ -7,7 +7,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function useTypewriterHook() {
     const [text, count] = useTypewriter({
-        words: ['A Full-Stack Developer'],
+        words: ['A Software Developer'],
         loop: true,
         delaySpeed: 2000,
     });
