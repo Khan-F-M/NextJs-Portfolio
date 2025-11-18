@@ -6,12 +6,15 @@ import Frontpage from '../components/Frontpage'
 import { Project } from '../typings'
 import { fetchProjects } from '../utils/fetchProjects'
 import { GetStaticProps } from 'next';
+import Footer from '@/components/Footer';
 
 
 
 export default function index() {
   return (
-    <Frontpage />
+    <>
+      <Frontpage />
+    </>
     // The config file for TS in this program is the jsconfig.json
   )
 }

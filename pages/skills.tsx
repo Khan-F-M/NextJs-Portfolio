@@ -3,6 +3,7 @@ import Skills from '../components/Skills'
 import { Skill } from '@/typings'
 import { fetchSkills } from '@/utils/fetchSkills';
 import { GetStaticProps } from 'next';
+import Footer from '@/components/Footer';
 
 type Props = {
   skills: Skill[];
@@ -10,7 +11,9 @@ type Props = {
 
 export default function skills({ skills }: Props) {
   return (
-    <Skills skills={skills} />
+    <>
+      <Skills skills={skills} />
+    </>
   )
 }
 

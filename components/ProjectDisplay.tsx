@@ -10,8 +10,8 @@ type Props = {
 export default function ProjectDisplay({ projects }: Props) {
     return (
         <div className='w-full'>
-            <div className='max-w-[1240px] mx-auto px-2 py-16 text-center 
-            mt-8 justify-evenly'>
+            <div className='max-w-[1240px] mx-auto px-2 pt-[200px] text-center 
+             justify-evenly'>
                 <h3 className='uppercase tracking-[20px]
             text-gray-300 text-2xl'>Projects</h3>
 
@@ -24,7 +24,7 @@ export default function ProjectDisplay({ projects }: Props) {
                     {projects.map((prj) => (
                         <ProjectItem
                             key={prj._id} // make sure to provide a unique key for each item in the list
-                            backgroundImage={urlFor(prj.projImage).url()}
+                            backgroundImage={prj.projImage ? urlFor(prj.projImage).url() : 'IMAGE NOT AVAILABLE'}
                             lanUsed={prj.languages}
                             projectURl={prj.moreInfo}
                             title={prj.name}

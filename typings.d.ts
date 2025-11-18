@@ -42,7 +42,3 @@ export interface About extends SanityBody {
     profilePic: Image;
 }
 
-export interface Social extends SanityBody {
-    _type: "socialsInfo"
-    socialPic: Image;
-}

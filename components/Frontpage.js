@@ -7,7 +7,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function useTypewriterHook() {
     const [text, count] = useTypewriter({
-        words: ['A Full-Stack Web Developer'],
+        words: ['A Full-Stack Developer'],
         loop: true,
         delaySpeed: 2000,
     });
@@ -22,8 +22,9 @@ export default function Frontpage() {
     return (
         <>
             {/* <BackgroundCrcle /> */}
-            <div className='w-full h-screen text-center'>
-                <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+            <div className='w-full'>
+                <div className='min-w-screen min-h-screen mx-auto px-10 pt-[200px] text-center 
+                     justify-evenly'>
                     <div>
                         <p className='uppercase text-sm tracking-widest text-gray-400'>
                             Welcome to my web page
@@ -44,17 +45,27 @@ export default function Frontpage() {
                         <div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
                             <div className='flex items-center justify-center my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaLinkedin size={35} />
+                                    <a href="https://www.linkedin.com/in/mdfaisalkhn/" target="_blank" rel="noopener noreferrer">
+                                        <FaLinkedin size={35} />
+                                    </a>
                                 </div>
                                 <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaGithub size={35} />
+                                    <a href="https://github.com/Khan-F-M" target="_blank" rel="noopener noreferrer">
+                                        <FaGithub size={35} />
+                                    </a>
+                                </div>
+                                {/* <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <a href="https://www.linkedin.com/in/mdfaisalkhn/" target="_blank" rel="noopener noreferrer">
+
+                                        <AiFillInstagram size={35} />
+                                    </a>
                                 </div>
                                 <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiFillInstagram size={35} />
-                                </div>
-                                <div className='rounded-full text-white shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiOutlineTwitter size={35} />
-                                </div>
+                                    <a href="https://www.linkedin.com/in/mdfaisalkhn/" target="_blank" rel="noopener noreferrer">
+
+                                        <AiOutlineTwitter size={35} />
+                                    </a>
+                                </div> */}
                             </div>
                         </div>
                     </div>

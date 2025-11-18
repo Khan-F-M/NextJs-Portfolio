@@ -4,14 +4,16 @@ import Skills from '../components/Skills'
 import { GetStaticProps } from 'next'
 import { About } from '@/typings'
 import { fetchAbouts } from '@/utils/fetchAbouts'
-
+import Footer from '../components/Footer'
 type Props = {
   abouts: About;
 }
 
 export default function about({ abouts }: Props) {
   return (
-    <Aboutpage abouts={abouts} />
+    <>
+      <Aboutpage abouts={abouts} />
+    </>
   )
 }
 
