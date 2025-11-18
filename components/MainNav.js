@@ -133,12 +133,6 @@ export default function MainNav() {
                                 <div className='rounded-full text-black shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaGithub size={35} />
                                 </div>
-                                <div className='rounded-full text-black shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiFillInstagram size={35} />
-                                </div>
-                                <div className='rounded-full text-black shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiOutlineTwitter size={35} />
-                                </div>
                             </div>
                         </div>
                     </div>

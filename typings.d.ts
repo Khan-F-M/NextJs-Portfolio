@@ -30,9 +30,10 @@ export interface Project extends SanityBody {
 }
 
 export interface Skill extends SanityBody {
-    _type: "skillsInfo"
+    _type: "skillsInfo";
     name: string;
     skillImage: Image;
+    order: number; // <-- new
 }
 
 export interface About extends SanityBody {
