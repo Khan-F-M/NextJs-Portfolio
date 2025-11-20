@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="pt-[100px] bg-black-900 rounded-lg shadow m-4 dark:bg-black-400">
             <div className="bottom-0 left-0 w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
                 <span className="text-sm text-white-700 sm:text-center dark:text-gray-400">
-                    © 2023 
+                    © 2025 
                     <Link href="https://github.com/Khan-F-M"
                         className="hover:underline"> Khan-F-M™</Link>
                 </span>

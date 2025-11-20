@@ -21,7 +21,7 @@ export default defineType({
         {
             name: "order",
             title: "displayOrder",
-            type: "number",
+            type: "string",
         },
     ],
-})
+});
