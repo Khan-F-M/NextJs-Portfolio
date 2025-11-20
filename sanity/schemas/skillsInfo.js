@@ -22,7 +22,6 @@ export default defineType({
             name: "order",
             title: "Display Order",
             type: "number",
-            description: "Controls order on the Skills page (1 = first)",
         }
     ],
 });
