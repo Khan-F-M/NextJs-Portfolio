@@ -1,32 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* This is how you add global styles in tailwind */
-@layer base { 
-    body {
-        /* Square brackets in tailwind are using for custom values */
-        /* Custom Values being hex color code, px, rm, %, anything you want... */
-        @apply bg-[#1a1a1a] text-[#FFFFFF] tracking-wide
-        /* tracking wide sort of just seperates it wider */
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        @apply font-bold
-    }
-
-    h1 {
-        @apply text-4xl sm:text-5xl md:text-6xl
-        /* this is basically saying that once we get past these
-        small breakpoints, we switch to 5xl, or 6xl */
-    }
-
-    li {
-        @apply cursor-pointer
-    }
-
-    button {
-        /* @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#f5f5f4] to-[#709dff] text-white */
-    }
+/* Global styles */
+body {
+  /* plain CSS instead of @apply */
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
+/* Optional: global heading styles (also just normal CSS) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; /* equivalent to font-bold */
+  font-size: 3.5em;
+}
+
+/* You can still use Tailwind classes directly in JSX instead of here:
+   e.g., <h1 className="text-4xl sm:text-5xl md:text-6xl" />
+*/
+
+li {
+  cursor: pointer;
+}
+
+/* button global style if you want – using regular CSS */
+button {
+  /* example if you want a default look:
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(156,163,175,0.5);
+  text-transform: uppercase;
+  */
+}

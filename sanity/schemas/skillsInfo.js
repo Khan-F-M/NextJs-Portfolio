@@ -20,8 +20,9 @@ export default defineType({
         },
         {
             name: "order",
-            title: "displayOrder",
-            type: "string",
-        },
+            title: "Display Order",
+            type: "number",
+            description: "Controls order on the Skills page (1 = first)",
+        }
     ],
 });
