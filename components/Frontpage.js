@@ -26,10 +26,10 @@ export default function Frontpage() {
                 <div className='min-w-screen min-h-screen mx-auto px-10 pt-[200px] text-center 
                      justify-evenly'>
                     <div>
-                        <p className='uppercase text-sm tracking-widest text-gray-400'>
+                        <p className='uppercase text-sm tracking-widest text-gray-400' id='WelcomeLine'>
                             Welcome to my web page
                         </p>
-                        <h1 className='py-4 text-purple-400'>
+                        <h1 className='py-4 text-purple-400' id='Faisal'>
                             Hi, I&apos;m <span className='text-[#5651e5]'>Faisal</span>
                         </h1>
                         <h1 className='py-4 text-white-500'>

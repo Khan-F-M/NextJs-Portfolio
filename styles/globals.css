@@ -10,7 +10,9 @@ body {
 /* Optional: global heading styles (also just normal CSS) */
 h1,
 h2,
-h3,
+h3 {
+    font-size: 2em;
+}
 h4,
 h5,
 h6 {
@@ -33,4 +35,12 @@ button {
   box-shadow: 0 10px 15px -3px rgba(156,163,175,0.5);
   text-transform: uppercase;
   */
+}
+
+#WelcomeLine {
+    font-size: 2em; 
+}
+
+#Faisal {
+    font-size: 2.5em;
 }
